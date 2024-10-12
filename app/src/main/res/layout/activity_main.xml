@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vegoo_bg_cloudy_n"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#30383B"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.library.sunview.SunView
+            android:id="@+id/sunView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="10dp"
+            android:background="@color/Transparent"
+            android:padding="10dp"
+            app:arcColor="#E9D42B"
+            app:arcDashHeight="1dp"
+            app:arcOffsetAngle="5"
+            app:arcSolidColor="#CCBC42"
+            app:bottomLineHeight="1dp"
+            app:currentTime="13:30"
+            app:is24HourFormat="true"
+            app:sunColor="#E9D42B"
+            app:timeTextColor="@color/white"
+            app:timeTextFont="@font/roboto_condensed_regular"
+            app:timeTextSize="13sp"
+            tools:ignore="MissingConstraints" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
